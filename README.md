@@ -42,7 +42,7 @@
 
 初始配置与程序在`files`文件夹下：
 
-* `etc/modules.d/wireless_enable`：无线硬件的设置，不要删除
+* `etc/modules.d/wireless_enable`：无线硬件的设置，原地址[https://github.com/maxlicheng/phicomm-n1-wireless](https://github.com/maxlicheng/phicomm-n1-wireless)，不要删除
 * `etc/config/network`：网络接口配置，默认IP为`192.168.1.254`，网关`192.168.1.1`，DNS`114.114.114.114`
 * `etc/config/dhcp`：DHCP配置，默认关闭DHCP服务
 * `etc/config/wireless`：无线网络配置，默认关闭无线网络
