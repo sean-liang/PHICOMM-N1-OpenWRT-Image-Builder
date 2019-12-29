@@ -85,8 +85,6 @@ sed -i '39iulimit -n 51200' "$OPENWRT_WORK_PATH"/etc/init.d/boot
 echo "Copy defaut configs."
 rsync -a "$WORK_DIR"/files/ $OPENWRT_WORK_PATH
 
-exit 0
-
 echo "Create firmware image."
 rm -rf "$IMAGE_WORK_PATH"/*
 mv "$OPENWRT_WORK_PATH"/* $IMAGE_WORK_PATH
