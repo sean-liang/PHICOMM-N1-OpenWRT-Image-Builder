@@ -23,7 +23,7 @@ umount_image()
 cleanup()
 {
 	echo "Cleanup."
-	rm -f n1-firmware.img
+	rm -f n1-firmware.img.gz
 	rm -f $OPENWRT_WORK_IMG
 	rm -f $ARMBIAN_WORK_IMG
 	rm -rf $OPENWRT_WORK_PATH
