@@ -23,7 +23,6 @@ umount_image()
 cleanup()
 {
 	echo "Cleanup."
-	rm -f n1-firmware.img.gz
 	rm -f $OPENWRT_WORK_IMG
 	rm -f $ARMBIAN_WORK_IMG
 	rm -rf $OPENWRT_WORK_PATH
@@ -93,6 +92,7 @@ umount_image $ARMBIAN_WORK_IMG
 
 echo "Compress firmware image."
 mv $ARMBIAN_WORK_IMG n1-firmware.img
+rm -f n1-firmware.img.gz
 gzip n1-firmware.img
 
 cleanup
